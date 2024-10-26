@@ -34,7 +34,7 @@ export default function Home() {
 ...
 ```
 
-When I run the dev server without turbopack, it works fine. But when I try with turbopack I always get theses errors:
+When I run the dev server without turbopack, it works fine. But when I try with turbopack I always get these errors:
 ```
 Module not found: Can't resolve ':package1'
 Import map: aliased to relative "../packages/package1" inside of [project]/
