@@ -42,3 +42,20 @@ Import map: aliased to relative "../packages/package1" inside of [project]/
 Module not found: Can't resolve ':package2'
 Import map: aliased to relative "../packages/package2" inside of [project]/
 ```
+
+I also tried with the following turbo config but I got the same error:
+```js
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        ':package1': '../packages/package1',
+        ':package2': '../packages/package2',
+      },
+    },
+  },
+};
+
+export default nextConfig;
+```
